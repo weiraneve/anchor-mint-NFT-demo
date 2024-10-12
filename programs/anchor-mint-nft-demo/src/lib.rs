@@ -88,6 +88,7 @@ pub mod metaplex_nft {
     #[derive(Accounts)]
     pub struct MintNFT<'info> {
         #[account(mut, signer)]
+        /// CHECK: This field is safe because it is verified through other means
         pub signer: AccountInfo<'info>,
         #[account(
             init,
@@ -108,11 +109,13 @@ pub mod metaplex_nft {
             mut,
             address = MetadataAccount::find_pda(&mint.key()).0,
         )]
+        /// CHECK: This field is safe because it is verified through other means
         pub metadata_account: AccountInfo<'info>, 
         #[account(
             mut,
             address = MasterEdition::find_pda(&mint.key()).0,
         )]
+        /// CHECK: This field is safe because it is verified through other means
         pub master_edition_account: AccountInfo<'info>,
 
         pub token_program: Program<'info, Token>,
