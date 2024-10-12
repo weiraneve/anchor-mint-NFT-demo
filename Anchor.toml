@@ -4,14 +4,14 @@
 resolution = true
 skip-lint = false
 
-[programs.localnet]
-anchor_mint_nft_demo = "sEVXzgRND6bkGiWz2uV1j6NTm85egusBwkHUfQaJLMo"
+[programs.devnet]
+metaplex_nft = "DVMDqMuqcvQCF1KEpBaVpqADzjWAim7QUZeUrSyCVG47"
 
 [registry]
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "Localnet"
+cluster = "Devnet"
 wallet = "~/.config/solana/id.json"
 
 [scripts]
