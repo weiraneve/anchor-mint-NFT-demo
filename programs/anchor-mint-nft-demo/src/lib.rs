@@ -12,7 +12,7 @@ use mpl_token_metadata::types::DataV2;
 
 use mpl_token_metadata::accounts::{ MasterEdition, Metadata as MetadataAccount};
 
-declare_id!("5jZguhu5FttuF93UFSfJNpCReNxNCEihNQLeRfAKbTN2");
+declare_id!("126VURQmHt59dj49wdPQkkvzoFdnXAvLaBsQMkye33rT");
 #[program]
 pub mod metaplex_nft {
 
